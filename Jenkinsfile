@@ -26,7 +26,7 @@ stages {
         
         stage ('Build our image'){
             steps{
-                sh 'sudo docker build  -t ihebhamdi/achat_front .'
+                sh 'docker build -t ihebhamdi/achat_front .'
             }
         }
         stage('Docker login')
